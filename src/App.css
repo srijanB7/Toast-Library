@@ -1,0 +1,40 @@
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 100px;
+    margin: 0 auto;
+    gap: 20px;
+    border-radius: 8px;
+    border: 2px dashed;
+}
+
+textarea {
+    width: 300px;
+    height: 80px;
+    padding: 10px;
+}
+
+button {
+    background-color: #582b91;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+}
+
+
+.variant-container {
+    display: flex;
+}
+
+.toasts-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

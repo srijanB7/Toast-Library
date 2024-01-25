@@ -1,0 +1,22 @@
+.toast-container {
+    
+    width: 400px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.notice {
+    background-color: #ffffff;
+}
+
+.error {
+    background-color: #fdeced;
+}
+
+.success {
+    background-color: #ebfdeb;
+}
+
+.warning {
+    background-color: #ffffff;
+}

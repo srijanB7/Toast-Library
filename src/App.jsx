@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import { Toast } from "./components/Toast/Toast";
+import "./App.css";
 
 function App() {
     const [toastMessage, setToastMessage] = useState("");
@@ -10,22 +10,11 @@ function App() {
         warning: false,
         error: false,
     });
-    const [toasts, setToasts] = useState([
-        { id: 2, message: "second", type: "notice", show: true },
-        {
-            id: 1,
-            message: "random",
-            type: "notice",
-            show: true,
-        },
-        { id: 3, message: "third", type: "notice", show: true },
-    ]);
-    //console.log(toasts);
+    const [toasts, setToasts] = useState([]);
     function handleChange(event) {
         const updatedVariant = {};
         for (const val in variant) {
             if (val === event.target.value) {
-                //console.log(val);
                 updatedVariant[val] = true;
             } else updatedVariant[val] = false;
         }

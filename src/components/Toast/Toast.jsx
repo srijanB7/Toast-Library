@@ -4,6 +4,7 @@ import { MdOutlineSmsFailed } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { IoWarning } from "react-icons/io5";
 import "./Toast.css";
+
 export const Toast = ({ message, type, id, handleToast }) => {
     React.useEffect(() => {
         console.log("effect");
@@ -24,8 +25,14 @@ export const Toast = ({ message, type, id, handleToast }) => {
 
     return (
         <div className={`toast-container ${type}`}>
-            <p className="toast-logo">{logo[type]}</p>
+            <div className="toast-header">
+                <p className="toast-logo">{logo[type]}</p>
+                <button className="dismiss-btn" onClick={() => handleToast(id)}>
+                    X
+                </button>
+            </div>
             <p className="toast-message">{message}</p>
         </div>
     );
 };
+``;

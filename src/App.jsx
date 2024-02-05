@@ -24,6 +24,11 @@ function App() {
 
     function handleSubmit(event) {
         event.preventDefault();
+        if(!toastMessage) {
+            alert("Enter a Toast message !");
+            return;
+        }
+        
         let type;
         for (const val in variant) {
             if (variant[val]) type = val;

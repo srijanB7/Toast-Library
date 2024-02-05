@@ -10,7 +10,7 @@ export const Toast = ({ message, type, id, handleToast }) => {
         console.log("effect");
         const timerID = setTimeout(() => {
             handleToast(id);
-        }, 8000);
+        }, 7000);
         return () => {
             clearTimeout(timerID);
         };
